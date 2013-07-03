@@ -62,7 +62,7 @@ def parse_arg_and_patterns():
     ####### read & check arguments #######
 
     path_to_pattern_files = list(sys.argv)[1:]
-    if len(path_to_pattern_files) < 2:
+    if len(path_to_pattern_files) < 1:
         print_parse_err_msg()
     if '-P' in path_to_pattern_files:
         regex = True
